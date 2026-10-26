@@ -233,3 +233,44 @@ h1 {
   .tools { grid-template-columns: 1fr; gap: 16px; }
   .masthead-inner { flex-wrap: wrap; gap: 12px 24px; }
 }
+
+/* Apresentação de sistema (piscinas/) */
+.sys-title { max-width: 16ch; }
+.sys {
+  margin-top: clamp(56px, 9vw, 104px);
+  display: grid;
+  grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+  gap: 20px clamp(24px, 6vw, 72px);
+  border-top: 1px solid var(--line);
+  padding-top: 32px;
+}
+.sys > h2 { font-size: 0.95rem; font-weight: 600; color: var(--purple); letter-spacing: 0.01em; }
+.sys-body { max-width: var(--measure); }
+.sys-body p { margin: 0 0 1em; }
+.sys-body p:last-child { margin-bottom: 0; }
+.sys-contact { padding: 20px 24px; background: var(--wash); border-radius: 10px; }
+.sys h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.01em; }
+.sys li p { margin: 8px 0 0; color: var(--ink-soft); }
+
+.steps { list-style: none; margin: 0; padding: 0; counter-reset: passo; display: grid; gap: 28px; max-width: var(--measure); }
+.steps li { counter-increment: passo; display: grid; grid-template-columns: 3rem 1fr; column-gap: 16px; }
+.steps li::before {
+  content: counter(passo);
+  grid-row: span 2;
+  font-size: 2.4rem; font-weight: 700; line-height: 1; color: var(--purple);
+}
+
+.feats {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  gap: 16px;
+}
+.feats li { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 22px 22px 24px; }
+.feats svg {
+  width: 30px; height: 30px; margin-bottom: 12px;
+  fill: none; stroke: var(--purple); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+
+@media (max-width: 720px) {
+  .sys { grid-template-columns: 1fr; gap: 16px; }
+}
