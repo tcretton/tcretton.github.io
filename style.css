@@ -68,7 +68,7 @@ a:focus-visible {
 .masthead-inner {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 18px var(--gutter);
+  padding: 10px var(--gutter);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,7 +77,7 @@ a:focus-visible {
 .logo { display: block; line-height: 0; border-radius: 4px; }
 .logo img { width: clamp(150px, 26vw, 210px); height: auto; }
 .masthead nav { display: flex; gap: clamp(14px, 3vw, 28px); font-size: 0.95rem; }
-.masthead nav a { color: var(--ink-soft); text-decoration: none; font-weight: 500; }
+.masthead nav a { color: var(--ink-soft); text-decoration: none; font-weight: 500; display: inline-block; padding: 10px 0; }
 .masthead nav a:hover, .masthead nav a[aria-current="page"] { color: var(--navy); }
 .masthead nav a[aria-current="page"] {
   text-decoration: underline;
@@ -231,7 +231,7 @@ h1 {
 
 @media (max-width: 720px) {
   .tools { grid-template-columns: 1fr; gap: 16px; }
-  .masthead-inner { flex-wrap: wrap; gap: 12px 24px; }
+  .masthead-inner { flex-wrap: wrap; gap: 4px 24px; padding-top: 14px; }
 }
 
 /* Apresentação de sistema (piscinas/) */
@@ -260,14 +260,20 @@ h1 {
   font-size: 2.4rem; font-weight: 700; line-height: 1; color: var(--purple);
 }
 
+/* Recursos: lista em duas colunas separada por fio, ícone ao lado do texto (sem cartões) */
 .feats {
   list-style: none; margin: 0; padding: 0;
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
-  gap: 16px;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+  column-gap: clamp(24px, 4vw, 48px);
 }
-.feats li { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 22px 22px 24px; }
+.feats li {
+  display: grid; grid-template-columns: 44px 1fr; column-gap: 16px; align-content: start;
+  padding: 20px 0 22px; border-top: 1px solid var(--line);
+}
+.feats li > :not(svg) { grid-column: 2; }
 .feats svg {
-  width: 30px; height: 30px; margin-bottom: 12px;
+  grid-row: span 2; width: 44px; height: 44px; padding: 10px;
+  background: var(--wash); border-radius: 10px;
   fill: none; stroke: var(--purple); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
 }
 
