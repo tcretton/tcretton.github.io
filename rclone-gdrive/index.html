@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>rclone-gdrive · cretton.info</title>
+<meta name="description" content="Aplicativo de uso pessoal que monta os Google Drives do próprio dono como pastas em um servidor doméstico.">
+<meta name="theme-color" content="#1c0d5f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="rclone-gdrive">
+<meta property="og:description" content="Aplicativo de uso pessoal que monta os Google Drives do próprio dono como pastas em um servidor doméstico.">
+<meta property="og:url" content="https://tcretton.github.io/rclone-gdrive/">
+<meta property="og:image" content="https://tcretton.github.io/img/cretton-info-logo.png">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="brand-rail" aria-hidden="true"></div>
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="logo" href="https://www.cretton.info/" aria-label="cretton.info, Tecnologia da Informação">
+      <img src="../img/cretton-info-logo.png" alt="cretton.info, Tecnologia da Informação" width="550" height="150">
+    </a>
+    <nav aria-label="Páginas do rclone-gdrive">
+      <a href="./" aria-current="page">Apresentação</a>
+      <a href="../privacidade.html">Privacidade</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+  <p class="crumbs"><a href="../">Início</a> / rclone-gdrive</p>
+  <h1 class="sys-title">Os Drives do dono, como pastas em casa</h1>
+  <span class="bar" aria-hidden="true"></span>
+  <p class="lede">Aplicativo de uso pessoal que monta os Google Drives do próprio dono como pastas em um servidor doméstico, usando o rclone.</p>
+
+  <section class="sys" aria-labelledby="oque">
+    <h2 id="oque">O que é</h2>
+    <div class="sys-body">
+      <p>Quem tem mais de uma conta Google acaba com arquivos espalhados em vários Drives. O rclone-gdrive junta esses Drives num só lugar: cada conta aparece como uma pasta no servidor de casa, e os arquivos são abertos como quaisquer outros.</p>
+      <p>Usa a API do Google Drive só para que o próprio dono acesse os arquivos das contas que ele mesmo autoriza.</p>
+    </div>
+  </section>
+
+  <section class="sys" aria-labelledby="como">
+    <h2 id="como">Como funciona</h2>
+    <ol class="steps">
+      <li>
+        <h3>O dono autoriza cada conta</h3>
+        <p>Cada conta Google é autorizada uma vez, pela tela de permissão do próprio Google.</p>
+      </li>
+      <li>
+        <h3>O rclone monta o Drive como pasta</h3>
+        <p>Os arquivos e pastas da conta aparecem no servidor doméstico como uma pasta comum.</p>
+      </li>
+      <li>
+        <h3>Tudo fica no servidor do dono</h3>
+        <p>Os tokens de acesso e um cache temporário dos arquivos ficam só nesse servidor. Nada vai para terceiros.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="sys" aria-labelledby="situacao">
+    <h2 id="situacao">Situação</h2>
+    <div class="sys-body">
+      <p>Uso pessoal; não é oferecido ao público. Não há análise, venda nem uso dos dados para publicidade. Detalhes na <a href="../privacidade.html">política de privacidade</a>.</p>
+      <p>O acesso pode ser revogado a qualquer momento em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p>Desenvolvido e mantido por Tércio Cretton · <a href="mailto:cretton@gmail.com">cretton@gmail.com</a></p>
+    <p><a href="https://www.cretton.info/">cretton.info</a></p>
+  </div>
+</footer>
+</body>
+</html>

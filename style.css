@@ -170,7 +170,8 @@ h1 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-top: 26px;
+  margin-top: 16px;
+  padding: 10px 0;
   font-weight: 500;
 }
 .more svg { width: 18px; height: 18px; transition: transform 0.25s var(--ease-out); }
@@ -234,7 +235,14 @@ h1 {
   .masthead-inner { flex-wrap: wrap; gap: 4px 24px; padding-top: 14px; }
 }
 
-/* Apresentação de sistema (piscinas/) */
+/* Início: lista de mini apps */
+.tool-list { display: grid; gap: 0; }
+.tool-list .tool { padding: 0 0 36px; }
+.tool-list .tool + .tool { border-top: 1px solid var(--line); padding-top: 36px; }
+.tool-link { color: var(--navy); text-decoration: none; }
+.tool-link:hover { color: var(--purple); text-decoration: underline; text-decoration-thickness: 2px; }
+
+/* Apresentação de cada app (piscinas/, rclone-gdrive/) */
 .sys-title { max-width: 16ch; }
 .sys {
   margin-top: clamp(56px, 9vw, 104px);

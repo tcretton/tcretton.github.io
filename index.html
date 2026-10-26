@@ -3,9 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tércio Cretton</title>
-<meta name="description" content="Página pessoal de Tércio Cretton e de ferramentas próprias, como o rclone-gdrive.">
+<title>Mini apps · Tércio Cretton · cretton.info</title>
+<meta name="description" content="Mini apps feitos por Tércio Cretton (cretton.info): ferramentas pequenas, sob medida, para resolver um problema de cada vez.">
 <meta name="theme-color" content="#1c0d5f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mini apps · cretton.info">
+<meta property="og:description" content="Ferramentas pequenas, sob medida, para resolver um problema de cada vez.">
+<meta property="og:url" content="https://tcretton.github.io/">
+<meta property="og:image" content="https://tcretton.github.io/img/cretton-info-logo.png">
+<meta property="og:locale" content="pt_BR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap">
@@ -19,38 +25,53 @@
     <a class="logo" href="https://www.cretton.info/" aria-label="cretton.info, Tecnologia da Informação">
       <img src="img/cretton-info-logo.png" alt="cretton.info, Tecnologia da Informação" width="550" height="150">
     </a>
-    <nav aria-label="Páginas">
+    <nav aria-label="Mini apps">
       <a href="./" aria-current="page">Início</a>
-      <a href="privacidade.html">Privacidade</a>
+      <a href="piscinas/">Piscinas</a>
+      <a href="rclone-gdrive/">rclone-gdrive</a>
     </nav>
   </div>
 </header>
 
 <main id="conteudo">
-  <h1>Tércio Cretton</h1>
+  <h1 class="sys-title">Mini apps</h1>
   <span class="bar" aria-hidden="true"></span>
-  <p class="lede">Página pessoal e de ferramentas próprias.</p>
+  <p class="lede">Ferramentas pequenas, feitas sob medida para resolver um problema de cada vez.</p>
 
-  <section class="tools" aria-labelledby="ferramentas">
-    <h2 id="ferramentas">Ferramentas</h2>
-    <article class="tool">
-      <h3>rclone-gdrive</h3>
-      <p>Aplicativo de uso pessoal que monta Google Drives do próprio dono como pastas em um servidor doméstico, via <a href="https://rclone.org">rclone</a>. Não é oferecido ao público.</p>
-      <ul class="facts" aria-label="Características">
-        <li>Uso pessoal</li>
-        <li>Google Drive API</li>
-        <li>rclone</li>
-      </ul>
-      <a class="more" href="privacidade.html">Política de privacidade
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </article>
+  <section class="tools" aria-labelledby="apps">
+    <h2 id="apps">Os apps</h2>
+    <div class="tool-list">
+      <article class="tool">
+        <h3><a class="tool-link" href="piscinas/">Manutenção de piscinas</a></h3>
+        <p>Registro de cada visita com fotos e medições, painel do dia, escala da equipe e produtos em falta, tudo pelo celular.</p>
+        <ul class="facts" aria-label="Características">
+          <li>Em teste</li>
+          <li>Empresas de manutenção</li>
+          <li>Celular</li>
+        </ul>
+        <a class="more" href="piscinas/" aria-hidden="true" tabindex="-1">Conhecer
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+      <article class="tool">
+        <h3><a class="tool-link" href="rclone-gdrive/">rclone-gdrive</a></h3>
+        <p>Monta os Google Drives do próprio dono como pastas em um servidor doméstico, via <a href="https://rclone.org">rclone</a>.</p>
+        <ul class="facts" aria-label="Características">
+          <li>Uso pessoal</li>
+          <li>Google Drive API</li>
+          <li>rclone</li>
+        </ul>
+        <a class="more" href="rclone-gdrive/" aria-hidden="true" tabindex="-1">Conhecer
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+    </div>
   </section>
 </main>
 
 <footer class="footer">
   <div class="footer-inner">
-    <p>Tércio Cretton · <a href="mailto:cretton@gmail.com">cretton@gmail.com</a></p>
+    <p>Desenvolvido e mantido por Tércio Cretton · <a href="mailto:cretton@gmail.com">cretton@gmail.com</a></p>
     <p><a href="https://www.cretton.info/">cretton.info</a></p>
   </div>
 </footer>
