@@ -296,3 +296,11 @@ h1 {
 @media (max-width: 720px) {
   .sys { grid-template-columns: 1fr; gap: 16px; }
 }
+
+/* Diferencial em destaque: etiqueta cheia e quadro "Por que" */
+.facts li.forte { background: var(--purple); color: #fff; font-weight: 500; }
+.tool p strong { color: var(--navy); font-weight: 600; }
+.porque { list-style: none; margin: 0; padding: 24px 28px; display: grid; gap: 18px; background: var(--wash); border-radius: 12px; max-width: var(--measure); }
+.porque li { margin: 0; }
+.porque h3 { margin: 0 0 4px; }
+.porque p { margin: 0; color: var(--ink-soft); }
