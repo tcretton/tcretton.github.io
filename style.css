@@ -248,7 +248,7 @@ h1 {
 .tool-list .tool { padding: 0 0 36px; }
 .tool-list .tool + .tool { border-top: 1px solid var(--line); padding-top: 36px; }
 .tool-link { color: var(--navy); text-decoration: none; }
-.tool-link:hover { color: var(--purple); text-decoration: underline; text-decoration-thickness: 2px; }
+.tool-link:hover { color: var(--purple); text-decoration: none; }
 
 /* Apresentação de cada app (piscinas/, rclone-gdrive/) */
 .sys-title { max-width: 16ch; }
