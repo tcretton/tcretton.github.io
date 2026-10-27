@@ -304,3 +304,21 @@ h1 {
 .porque li { margin: 0; }
 .porque h3 { margin: 0 0 4px; }
 .porque p { margin: 0; color: var(--ink-soft); }
+
+/* Menu do início com todos os apps: no celular vira faixa que rola para o lado */
+.masthead nav.nav-apps { gap: clamp(14px, 2vw, 24px); }
+.nav-apps a { white-space: nowrap; }
+@media (max-width: 1023px) {
+  .masthead-apps .masthead-inner { flex-wrap: wrap; gap: 0 24px; }
+  .masthead-apps .logo { margin: 16px 0 4px; }
+  .masthead nav.nav-apps {
+    flex-basis: 100%;
+    overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+    margin: 0 calc(-1 * var(--gutter)); padding: 0 var(--gutter); gap: 20px;
+    scroll-padding: 0 var(--gutter);
+  }
+  .masthead nav.nav-apps::-webkit-scrollbar { display: none; }
+}
+@media (max-width: 720px) {
+  .masthead nav.nav-apps { mask-image: linear-gradient(90deg, #000 85%, transparent); }
+}
