@@ -322,3 +322,21 @@ h1 {
 @media (max-width: 720px) {
   .masthead nav.nav-apps { mask-image: linear-gradient(90deg, #000 85%, transparent); }
 }
+
+/* Manuais (piscinas/manual-*.html): índice, passos e prints de tela em moldura de celular */
+.indice { margin-top: clamp(40px, 6vw, 64px); max-width: var(--measure); padding: 22px 26px; background: var(--wash); border-radius: 12px; }
+.indice h2 { font-size: 0.95rem; font-weight: 600; color: var(--purple); margin: 0 0 10px; }
+.indice ol { margin: 0; padding-left: 1.3em; columns: 2 14rem; column-gap: 32px; }
+.indice li { padding: 3px 0; break-inside: avoid; }
+.indice a { color: var(--navy); text-decoration: none; display: inline-block; padding: 8px 0; }
+.indice a:hover { color: var(--purple); text-decoration: underline; }
+.manual p, .manual ul, .manual ol { max-width: var(--measure); }
+.manual ul.dicas, .manual ol.passos { padding-left: 1.2em; margin: 0 0 1em; }
+.manual ul.dicas li, .manual ol.passos li { margin: 0 0 0.55em; }
+.manual ol.passos li::marker { color: var(--purple); font-weight: 600; }
+.telas { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 260px)); gap: 24px; margin: 24px 0 8px; }
+.tela { margin: 0; }
+.tela img { display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--line); background: #f3f6fa; }
+.tela figcaption { margin-top: 10px; font-size: 0.875rem; line-height: 1.45; color: var(--ink-soft); }
+.nota-ficticia { margin-top: clamp(48px, 7vw, 80px); font-size: 0.875rem; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 20px; }
+.sys { scroll-margin-top: 16px; }
