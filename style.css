@@ -82,7 +82,7 @@ a:focus-visible {
 .masthead nav { align-self: stretch; align-items: stretch; }
 .masthead nav a {
   color: var(--ink-soft); text-decoration: none; font-weight: 500;
-  display: flex; align-items: center; padding: 12px 0 9px;
+  display: flex; align-items: center; justify-content: center; min-width: 44px; padding: 12px 0 9px;
   border-bottom: 3px solid transparent; margin-bottom: -1px;
   transition: color 0.2s var(--ease-out), border-color 0.2s var(--ease-out);
 }
